@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- swiper css  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>FOODIE</title>
+  <style>
+    /* body::-webkit-scrollbar {
+      display: none;
+    } */
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #FADFA1;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 70%;
+      background-color: #FADFA1;
+      object-fit: cover;
+      padding: 1rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      width: 90%;
+      height: 90%;
+      padding: 0px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+
+    .card {
+      height: 30rem;
+      max-width: 20rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="row">
+    <nav class="nav justify-content-center" style="background-color: #cd5d0862; font-size: medium; padding: 10px;">
+      <!-- <ul class="navbar-nav"> -->
+      <li class="nav-item">
+        <a class="nav-link" style="color: white;" href="halamanutama.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: white;" href="#">Rekomendasi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: white;" href="about.html">About</a>
+      </li>
+      <!-- </ul> -->
+    </nav>
+
+  </div>
+
+  <div class="swiper mySwiper">
+    <h2 style="color: #aa4848; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align: center;">
+      ---RECOMENDASI---</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="mentahan/cumi asam manis.jpg"></div>
+      <div class="swiper-slide"><img src="mentahan/Gyeran Mari (Korean Rolled Omelette) -.jpeg"></div>
+      <div class="swiper-slide"><img src="mentahan/Perkedel Ayam Kentang.jpeg"></div>
+      <div class="swiper-slide"><img src="mentahan/tanghulu.jpg"></div>
+      <div class="swiper-slide"><img src="mentahan/bakpao.jpeg"></div>
+      <div class="swiper-slide"><img src="mentahan/nacho.png"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="m-4 p-5 text-white rounded" style="background-color: #c98a5a;">
+    <h1>Hidup Sehat dengan Makanan Lezat</h1>
+    <p style="font-size: larger;">Makanan yang sehat dan lezat adalah perpaduan sempurna antara rasa dan gizi. Setiap
+      hidangan tak hanya memanjakan lidah, tetapi juga menyehatkan tubuh dan meningkatkan energi. Dengan memilih bahan
+      segar dan bergizi, kita bisa menikmati kebahagiaan sekaligus menjaga kesehatan. Mari mulai hidup sehat dengan
+      memilih makanan yang baik, karena kesehatan adalah aset terbaik kita.</p>
+    <p style="font-size: larger;">pilih menu dibawah ini sesuai kebutuhan anda :</p>
+    <!-- <div class="btn-group "> -->
+      <a href="#camilan" class="btn btn-secondary btn-lg mb-2">Cemilan</a>
+      <a href="#makanansehat" class="btn btn-secondary btn-lg mb-2">Makanan Sehat</a>
+      <a href="#" class="btn btn-secondary btn-lg mb-2">Minuman</a>
+      <a href="#" class="btn btn-secondary btn-lg">Sarapan</a>
+    <!-- </div> -->
+  </div>
+  <br>
+  <br>
+
+  <section id="makanansehat">
+    <div class="top1">
+      <h2 style="padding-left: 1rem;">Paling banyak dicari dari - Makanan Sehat</h2>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/supjagung.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Sup Jagung Kepiting</h4>
+              <div class="card-text">Daging kepiting yang lembut dan super gurih ini memang cocok dibuat sajian sup.
+              </div>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#supjagung">Lihat Resep..</button>
+              <div class="modal fade" id="supjagung">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Sup Jagung Kepiting</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>1 buah jagung manis</li>
+                        <li>1 ekor kepiting</li>
+                        <li>1 butir telur</li>
+                        <li>4 buah bawang putih</li>
+                        <li>Secukupnya garam</li>
+                        <li>Secukupnya gula</li>
+                        <li>1/2 sdt lada bubuk</li>
+                        <li>1 sdm tepung maizena</li>
+                        <li>1 sdm margarin</li>
+                        <li>Secukupnya minyak goreng</li>
+                        <li>2 gelas air</li>
+                      </ul>
+                      <h5>Cara membuat :</h5>
+                      <ol>
+                        <li>Pipil jagung manis. Sisihkan</li>
+                        <li>Goreng kepiting yg sudah d beri garam hingga berubah warna. Angkat, diamkan sebentar. Lalu
+                          pisahkan daging kepiting dgn kulitnya. Sisihkan.</li>
+                        <li>Tumis bawang putih yg sudah dihaluskan dgn margarine hingga harum. Masukan daging kepiting.
+                          Aduk aduk.</li>
+                        <li>Masukan jagung pipil dan tambahkan 2 gelas air untuk melunakan jagung.</li>
+                        <li>Setelah jagung dirasa lunak. Masukan telur dan aduk cepat agar telur tidak menggumpal.</li>
+                        <li>Tambahkan garam, gula dan lada. Aduk2.</li>
+                        <li>Tambahkan maizena yg sudah d larutkan dengan air. Masak hingga mengental. Sajikan hangat.
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/capcayjamur.jpeg">
+            <div class="card-body">
+              <h4 class="card-title">Capcay Jamur</h4>
+              <p class="card-text">Capcay dengan isian lengkap dan bumbu mantap ini bisa jadi pilihan lauk enak yang
+                menyegarkan.</p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#capcayjamur">Lihat Resep..</button>
+              <div class="modal fade" id="capcayjamur">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Capcay Jamur</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>1 genggam jamur</li>
+                        <li>9 tongkol jagung</li>
+                        <li>1 wortel</li>
+                        <li>1 bonggol brokoli</li>
+                        <li>1 bonggol pokcoy</li>
+                        <li>1 butir telur ayam</li>
+                        <li>1 sdm tepung maizena</li>
+                        <li>150 ml air</li>
+                      </ul>
+                      <h5>Bumbu :</h5>
+                      <ul>
+                        <li>2 siung bawang putih, cincang</li>
+                        <li>1/2 siung bawang bombay, iris</li>
+                        <li>1 sdm saos tiram</li>
+                        <li>1,5 sdm saos sambal</li>
+                        <li>1/2 sdt lada bubuk</li>
+                        <li>1 sdt garam</li>
+                        <li>1 sdt kaldu bubuk</li>
+                        <li>1 sdt gula pasir</li>
+                      </ul>
+                      <ol>
+                        <li>Tumis bawang putih, bawang bombay dg sedikit minyak aduk rata, kemudian masukkan sosis dan
+                          bakso aduk" lagi. Masukkan telur</li>
+                        <li>Aduk cepat, dan masukkan juga wortel, jagung putren, brokoli, dan air secukupnya. Setelah
+                          itu masukkan jamur kuping dan pokcoy</li>
+                        <li>Masukkan saus sambal, saus tiram dan garam aduk rata. Masukkan juga gula pasir dan kaldu
+                          bubuk aduk rata lagi (cek rasa).</li>
+                        <li>Terakhir beri cairan tepung maizena aduk merata, masak hingga airnya menyusut dan mengental.
+                        </li>
+
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/cumi asam manis.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Cumi Asam Manis</h4>
+              <p class="card-text">Salah satu cara terbaik mengolah cumi adalah dimasak dengan bumbu asam manis.</p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#cumiasammanis">Lihat Resep..</button>
+              <div class="modal fade" id="cumiasammanis">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Cumi Asam Manis</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>1 kg cumi</li>
+                        <li>1 bh bawang bombay</li>
+                        <li>8 bh bawang merah</li>
+                        <li>5 bh bawang putih</li>
+                        <li>5 bh cabe keriting</li>
+                        <li>2 sdm saos tiram</li>
+                        <li>4 sdm saos tomat</li>
+                        <li>Secukupnya garam, gula, kaldu bubuk</li>
+                      </ul>
+                      <h5>Cara Membuat :</h5>
+                      <ol>
+                        <li>Rebus cumi sebentar, tiriskan.</li>
+                        <li>Tumis bumbu sampai harum lalu masukan cumi.</li>
+                        <li>Tambahkan saos tiram, saos sambal, garam, gula,kaldu bubuk dan sedikit air, masak sebentar
+                          lalu koreksi rasa.</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/gyeran mari.png">
+            <div class="card-body">
+              <h4 class="card-title">Gyeran Mari - egg rolled</h4>
+              <p class="card-text">Selain enak, bahannya ga ribet dan bisa suka-suka.</p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#gyeran">Lihat Resep..</button>
+              <div class="modal fade" id="gyeran">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Gyeran Mari - egg rolled</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>3 butir telur ayam</li>
+                        <li>1 buah wortel kecil</li>
+                        <li>sosis secukupnya</li>
+                        <li>1 batang daun bawang dan seledri</li>
+                        <li>garam dan penyedap lainnya secukupnya</li>
+                        <li>Secukupnya margarin blue band</li>
+                      </ul>
+                      <h5>Cara Membuat :</h5>
+                      <ol>
+                        <li>Pecahkan semua telur kedalam mangkok ukuran sedang dan mix dengan wortel yang telah
+                          dipotong2</li>
+                        <li>Masukkan irisan daun bawang & daun seledri. Tambahkan garam, lada & royco.</li>
+                        <li>Aduk dan kocok lepas hingga setengah mengembang dan tercampur rata.</li>
+                        <li>Panaskan teflon, tambahkan margarin ratakan di seluruh bagian teflon.</li>
+                        <li>Tuangkan adonan telur ke teflon sedikit demi sedikit, gulung telur secara perlahan
+                          menggunakan spatula (sikon telur masih basah alias 1/2 matang).</li>
+                        <li>Lakukan hingga adonan habis. Selesai</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section id="camilan">
+    <div class="top2">
+      <h2>Paling banyak dicari dari - Camilan</h2>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/potatoes ball with cheese.png">
+            <div class="card-body">
+              <h4 class="card-title">Potatoes Ball - Cheese</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#kentang">Lihat Resep..</button>
+              <div class="modal fade" id="kentang">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Potatoes Ball - Cheese</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>4 buah kentang ukuran sedang</li>
+                        <li>4 sdm keju parut</li>
+                        <li>2 sdm tepung maizena</li>
+                        <li>Sejumput garam</li>
+                      </ul>
+                      <h5>Cara Membuat :</h5>
+                      <ol>
+                        <li>Kukus / rebus kentang sampai empuk</li>
+                        <li>Setelah itu haluskan kentangnya</li>
+                        <li>Tambahkan tepung maizena, garam, dan keju parutnya, dan campurkan</li>
+                        <li>Sudah campur merata, bentuk bulat2.</li>
+                        <li>Lalu goreng dengan minyak yg sudah panas. Selesai</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/butter cookies.png">
+            <div class="card-body">
+              <h4 class="card-title">Butter Cookies</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis veniam
+                voluptatem saepe itaque id ipsa enim </p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#butter">Lihat Resep..</button>
+              <div class="modal fade" id="butter">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Butter Cookies</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>55 gr Icing Sugar</li>
+                        <li>115 gr Butter (Anchor)</li>
+                        <li>150 gr Medium Flour (Segitiga Biru)</li>
+                        <li>1 gr Salt</li>
+                        <li>1 sdt Vanilla Paste</li>
+                      </ul>
+                      <h5>Cara Membuat :</h5>
+                      <ol>
+                        <li>Masukkan icing sugar dan butter. aduk menggunakan spatula/mixer</li>
+                        <li>Lalu masukkan medium flour</li>
+                        <li>Adonannya di resting/diamkan menggunakan plastic wrap. masukkan ke dalam freezer selama 10
+                          menit</li>
+                        <li>Keluarkan, lalu potong menjadi bentuk bulat. coating/balur menggunakan gula pasir</li>
+                        <li>Bake 170° selama 10-15 menit</li>
+                        <li>Selesai</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/Airfrayergarlicbread.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Garlic Bread - Airfrayer</h4>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quibusdam,</p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#garlic">Lihat Resep..</button>
+              <div class="modal fade" id="garlic">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Garlic Bread - Airfrayer</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>3 lembar roti tawar</li>
+                        <li>1 sdm keju oles</li>
+                        <li>1 sdt margarin</li>
+                        <li>1/2 sdt bawang putih bubuk</li>
+                        <li>1 sdt keju parmesan</li>
+                        <li>1/4 sdt rosemary kering</li>
+                      </ul>
+                      <h5>Cara Membat :</h5>
+                      <ol>
+                        <li>Campur semua bahan olesan. Potong2 roti tawar menjadi 4 bagian memanjang</li>
+                        <li>Oles roti dengan olesan ke seluruh permukaannya.</li>
+                        <li>Panaskan air fryer di suhu 180C selama 5 menit. Tata roti dan masak selama 5 menit. Balik
+                          roti dan lanjutkan memasak selama 3 menit</li>
+                        <li>Potong2 roti menjadi 4 bagian dan sajikan segera. Selesai</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <img src="mentahan/tanghulu.png">
+            <div class="card-body">
+              <h4 class="card-title">Tanghulu</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferen </p>
+            </div>
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#tanghulu">Lihat Resep..</button>
+              <div class="modal fade" id="tanghulu">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Tanghulu</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h5>Bahan :</h5>
+                      <ul>
+                        <li>Buah anggur (boleh buah yg lainnya juga)</li>
+                        <li>tusuk sate</li>
+                        <li>100 gr gula pasir</li>
+                        <li>60 ml air matang</li>
+                      </ul>
+                      <h5>Cara Membuat :</h5>
+                      <ol>
+                        <li>Siapkan anggur yang sudah di cuci bersih dan dikeringkan.lalu tusuk dengan tusuk sate.</li>
+                        <li>Siapkan panci,masukan gula dan air lalu masak hingga mendidih,gula larut dan mengental.</li>
+                        <li>Kemudian balurkan di buah anggur yang sudah di tusuk keringkan hingga mengeras.Tanghulu anggur yang manis asam siap di nikmati</li>
+                        <li>Selesai</li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-secondary text-center py-3">
+    <p class="mb-0">&copy; 2024 Website Resep Makanan. All Rights Reserved.</p>
+  </div>
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
